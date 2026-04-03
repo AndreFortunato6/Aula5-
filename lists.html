@@ -8,6 +8,79 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <style>
+  /* ===== RESPONSIVIDADE GLOBAL ===== */
+@media (max-width: 1024px) {
+
+  /* Sidebar vira topo (ou some) */
+  aside {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Header ocupa tudo */
+  header {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  /* Main sem margem lateral */
+  main {
+    margin-left: 0 !important;
+    padding: 20px !important;
+  }
+
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  /* Grid vira 1 coluna */
+  .grid-cols-12 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .md\:col-span-4,
+  .md\:col-span-2,
+  .lg\:col-span-8,
+  .lg\:col-span-4 {
+    grid-column: span 12 !important;
+  }
+
+  /* Header search menor */
+  header .w-96 {
+    width: 100% !important;
+  }
+
+  /* Espaçamentos */
+  .px-10 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Cards stack */
+  .grid {
+    gap: 1rem !important;
+  }
+
+}
+
+/* ===== TELAS MUITO PEQUENAS ===== */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 1rem !important;
+  }
+
+  .text-4xl {
+    font-size: 1.8rem !important;
+  }
+
+}
 body { background-color: #0e0e0e; color: #ffffff; }
 .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
 .glass-card { background: rgba(38, 38, 38, 0.6); backdrop-filter: blur(20px); }
