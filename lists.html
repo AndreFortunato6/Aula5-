@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinetic Workspace | Lists</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+body { background-color: #0e0e0e; color: #ffffff; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.glass-card { background: rgba(38, 38, 38, 0.6); backdrop-filter: blur(20px); }
+.custom-gradient { background: linear-gradient(135deg, #ca98ff 0%, #9c42f4 100%); }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body overflow-hidden">
+<aside class="h-full w-72 fixed left-0 top-0 flex flex-col bg-[#0e0e0e] shadow-[4px_0_24px_rgba(0,0,0,0.5)] shadow-[0_0_40px_rgba(138,43,226,0.05)] py-8 z-50">
+<div class="px-8 mb-10 flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-primary-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed font-bold">bolt</span>
+</div>
+<div>
+<h1 class="text-2xl font-black text-[#ca98ff] italic tracking-tighter uppercase font-headline">Kinetic</h1>
+<p class="text-[10px] text-on-surface-variant tracking-[0.2em] uppercase font-bold">Digital Atelier</p>
+</div>
+</div>
+<nav class="flex flex-col">
+<!-- Dashboard (Inactive) -->
+<a class="text-[#adaaaa] hover:text-[#f5f5f5] py-3 px-6 hover:bg-white/5 transition-all duration-300 ease-out flex items-center gap-4 font-headline font-bold text-lg tracking-tight uppercase" href="index.html">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                Dashboard
+            </a>
+<!-- Boards (Inactive) -->
+<a class="text-[#adaaaa] hover:text-[#f5f5f5] py-3 px-6 hover:bg-white/5 transition-all duration-300 ease-out flex items-center gap-4 font-headline font-bold text-lg tracking-tight uppercase" href="boards.html">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+                Boards
+            </a>
+<!-- Lists (Active) -->
+<a class="text-[#ca98ff] bg-white/5 font-bold border-r-2 border-[#ca98ff] py-3 px-6 hover:bg-white/5 transition-all duration-300 ease-out flex items-center gap-4 font-headline font-bold text-lg tracking-tight uppercase" href="lists.html">
+<span class="material-symbols-outlined" data-icon="format_list_bulleted">format_list_bulleted</span>
+                Lists
+            </a>
+<!-- Calendar (Inactive) -->
+<a class="text-[#adaaaa] hover:text-[#f5f5f5] py-3 px-6 hover:bg-white/5 transition-all duration-300 ease-out flex items-center gap-4 font-headline font-bold text-lg tracking-tight uppercase" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+                Calendar
+            </a>
+</nav>
+<div class="mt-auto border-t border-white/5 pt-6">
+<a class="text-[#adaaaa] hover:text-[#f5f5f5] py-3 px-6 hover:bg-white/5 transition-all duration-300 ease-out flex items-center gap-4 font-headline font-bold text-lg tracking-tight uppercase" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                Settings
+            </a>
+<a class="text-[#adaaaa] hover:text-[#f5f5f5] py-3 px-6 hover:bg-white/5 transition-all duration-300 ease-out flex items-center gap-4 font-headline font-bold text-lg tracking-tight uppercase" href="#">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+                Help
+            </a>
+<div class="px-6 mt-6 flex items-center gap-4">
+<img alt="Kinetic Workspace" class="w-10 h-10 rounded-full border-2 border-primary/20" data-alt="Professional portrait of a young creative professional with short dark hair in a focused environment with neon accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGhoXGMaJ8N-5CmdJqANM9umfgwFfHua2lm7jGA402Bz2cMOhuPNNsQfIW_4lX1Lf9W8XzXfh0Q-yG_cvQ1wvDeUz5ciVSb4AY4c89FJciSedlPzeMbiHYUDvCmOMZq_o_BL2q3V2BiVj5-CjUBsKJf--dbVLPYUIW6Ire3e2v1FAaEWTFFVJSZ0367oYzYKV6D_AXsLhxAL1UzLptR_1jx5gdWMoPwjQ5nVyFb95l-y-wFrAZP_HR5U0Vn5LE4wCOZhDdFMI3qB0"/>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-on-surface">Alex Chen</span>
+<span class="text-xs text-on-surface-variant">Design Lead</span>
+</div>
+</div>
+</div>
+</aside>
+<header class="fixed top-0 right-0 w-[calc(100%-18rem)] h-16 z-40 bg-[#0e0e0e]/80 backdrop-blur-xl bg-[#131313] border-b border-white/5">
+<div class="flex justify-between items-center px-8 w-full h-full">
+<div class="flex items-center bg-surface-container-highest rounded-full px-4 py-1.5 w-96">
+<span class="material-symbols-outlined text-on-surface-variant mr-2 text-sm" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full text-on-surface placeholder:text-on-surface-variant/50" placeholder="Search workspace..." type="text"/>
+</div>
+<div class="flex items-center space-x-6">
+<div class="flex items-center space-x-2">
+<button class="p-2 text-[#adaaaa] hover:bg-white/10 rounded-full transition-colors hover:brightness-125"><span class="material-symbols-outlined" data-icon="notifications">notifications</span></button>
+<button class="p-2 text-[#adaaaa] hover:bg-white/10 rounded-full transition-colors hover:brightness-125"><span class="material-symbols-outlined" data-icon="history">history</span></button>
+<button class="p-2 text-[#adaaaa] hover:bg-white/10 rounded-full transition-colors hover:brightness-125"><span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span></button>
+</div>
+<div class="h-8 w-px bg-white/10 mx-2"></div>
+<div class="flex items-center space-x-3 group cursor-pointer">
+<div class="text-right"><p class="text-xs font-bold text-on-surface">Alex Rivera</p><p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Lead Designer</p></div>
+<img alt="User Portrait" class="w-10 h-10 rounded-full border-2 border-primary/20 group-hover:border-primary/50 transition-all object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiV0mPfgIdYpds-3GXMcq_I3tvIbqFToj4WhZo1eYSO1A-mLvtU7k6QJmmV0HRr9gQ9HMg_59OgVAejBBx7rWMD-PLS0lFKb7jtTRL7lY6VqHHclnA49c1z9jJxJLK7vNNy2QgLGNwfEVwbxJNJI_HpPn_Ma9Dcg04QGR7qhwehJZPIq9DWFibuLa-Ncw2Qv9t1giJMz6JevtByUaIQfh_cRi7My24ZffGjY2YNZyRT4nUXlFVXcIftxStzGh2_hEGUAaSkw69Jw"/>
+</div>
+</div>
+</div>
+</header>
+<main class="ml-72 pt-24 px-10 pb-12 min-h-screen">
+<section class="mb-10">
+<h2 class="font-headline text-on-surface-variant text-sm font-bold uppercase tracking-[0.3em] mb-2">Project Overview</h2>
+<div class="flex justify-between items-end">
+<h1 class="font-headline text-4xl font-extrabold tracking-tight">Q4 STRATEGY BOARD</h1>
+</div>
+</section>
+<section class="mt-8">
+  <h3 class="font-headline text-lg font-bold mb-4">Board Selection</h3>
+  <div class="bg-surface-container-low rounded-xl p-6 border border-white/[0.03] mb-6">
+    <label class="block text-sm font-bold text-on-surface mb-3">Select a Board:</label>
+    <select id="boardSelector" class="w-full p-3 rounded-xl bg-black/50 border border-white/20 text-on-surface focus:outline-none focus:border-primary/40">
+      <option value="">Choose a board...</option>
+    </select>
+  </div>
+
+  <div id="boardTasksSection" class="hidden">
+    <h3 class="font-headline text-lg font-bold mb-4">Tasks in <span id="selectedBoardName"></span></h3>
+    <div class="board-tasks-list bg-surface-container-low rounded-xl p-4 border border-white/[0.03] mb-4"></div>
+    <div class="flex space-x-2">
+      <input id="newBoardTaskInput" type="text" placeholder="Nova tarefa..." class="flex-1 p-2 rounded-xl bg-black/50 border border-white/20 text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-primary/40"/>
+      <button id="addBoardTaskBtn" class="px-4 py-2 rounded-xl custom-gradient text-on-primary-fixed font-bold hover:brightness-110">Add</button>
+    </div>
+  </div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
